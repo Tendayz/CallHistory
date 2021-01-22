@@ -13,6 +13,12 @@
 		FB51488225BAE0500093FA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51488025BAE0500093FA86 /* Main.storyboard */; };
 		FB51488425BAE0540093FA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB51488325BAE0540093FA86 /* Assets.xcassets */; };
 		FB51488725BAE0540093FA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB51488525BAE0540093FA86 /* LaunchScreen.storyboard */; };
+		FB51489425BAE2E60093FA86 /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51489325BAE2E60093FA86 /* DataCollectionViewCell.swift */; };
+		FB51489725BAE4BD0093FA86 /* CallModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51489625BAE4BD0093FA86 /* CallModel.swift */; };
+		FB51489A25BAE4E10093FA86 /* ClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51489925BAE4E10093FA86 /* ClientModel.swift */; };
+		FB5148A125BAE5E20093FA86 /* BusinessNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5148A025BAE5E20093FA86 /* BusinessNumberModel.swift */; };
+		FB5148A425BAE90E0093FA86 /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5148A325BAE90E0093FA86 /* DataResponse.swift */; };
+		FB5148A725BAF83F0093FA86 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5148A625BAF83F0093FA86 /* DetailedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		FB51488325BAE0540093FA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB51488625BAE0540093FA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB51488825BAE0540093FA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB51489325BAE2E60093FA86 /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		FB51489625BAE4BD0093FA86 /* CallModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallModel.swift; sourceTree = "<group>"; };
+		FB51489925BAE4E10093FA86 /* ClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientModel.swift; sourceTree = "<group>"; };
+		FB5148A025BAE5E20093FA86 /* BusinessNumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessNumberModel.swift; sourceTree = "<group>"; };
+		FB5148A325BAE90E0093FA86 /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
+		FB5148A625BAF83F0093FA86 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,45 @@
 		FB51487925BAE0500093FA86 /* CallHistory */ = {
 			isa = PBXGroup;
 			children = (
+				FB5148AD25BB21F00093FA86 /* Controllers */,
+				FB5148AA25BB21730093FA86 /* Models */,
+				FB5148AB25BB21A60093FA86 /* Views */,
 				FB51487A25BAE0500093FA86 /* AppDelegate.swift */,
 				FB51487C25BAE0500093FA86 /* SceneDelegate.swift */,
-				FB51487E25BAE0500093FA86 /* ViewController.swift */,
 				FB51488025BAE0500093FA86 /* Main.storyboard */,
 				FB51488325BAE0540093FA86 /* Assets.xcassets */,
 				FB51488525BAE0540093FA86 /* LaunchScreen.storyboard */,
 				FB51488825BAE0540093FA86 /* Info.plist */,
 			);
 			path = CallHistory;
+			sourceTree = "<group>";
+		};
+		FB5148AA25BB21730093FA86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB5148A325BAE90E0093FA86 /* DataResponse.swift */,
+				FB51489625BAE4BD0093FA86 /* CallModel.swift */,
+				FB51489925BAE4E10093FA86 /* ClientModel.swift */,
+				FB5148A025BAE5E20093FA86 /* BusinessNumberModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB5148AB25BB21A60093FA86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB51489325BAE2E60093FA86 /* DataCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB5148AD25BB21F00093FA86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB51487E25BAE0500093FA86 /* ViewController.swift */,
+				FB5148A625BAF83F0093FA86 /* DetailedViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +179,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB51489425BAE2E60093FA86 /* DataCollectionViewCell.swift in Sources */,
 				FB51487F25BAE0500093FA86 /* ViewController.swift in Sources */,
 				FB51487B25BAE0500093FA86 /* AppDelegate.swift in Sources */,
 				FB51487D25BAE0500093FA86 /* SceneDelegate.swift in Sources */,
+				FB51489A25BAE4E10093FA86 /* ClientModel.swift in Sources */,
+				FB5148A725BAF83F0093FA86 /* DetailedViewController.swift in Sources */,
+				FB5148A125BAE5E20093FA86 /* BusinessNumberModel.swift in Sources */,
+				FB5148A425BAE90E0093FA86 /* DataResponse.swift in Sources */,
+				FB51489725BAE4BD0093FA86 /* CallModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
